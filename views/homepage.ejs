@@ -1,0 +1,45 @@
+<%-include('header')-%>
+
+<nav class="navbar bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white">MOVIE WORLD</a>
+      <form class="d-flex" role="search">
+        <div class="usermail mt-3 me-2">
+          <h6 class="text-white ">User:<%= locals.user ? user: "User" %></h6>
+        </div>
+       
+       <button class="btn btn-success"> <a class="logout text-white" href="/logout">Logout</a></button>
+       
+      </form>
+    </div>
+  </nav>
+
+<div class="text-center center-div  " id="login" >
+    
+        <h1 class="head-title">WELCOME TO MOVIE WORLD</h1>
+        <div class="container mycardbox d-flex">
+          <% cards.forEach((e)=>{ %>
+       <div class="card-div mt-5 ">
+        
+        <div class="card" style="width: 18rem;">
+          <img src="<%=e.img %>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title"><%=e.num %></h5>
+            <p class="card-text"><%=e.text %></p>
+            <a href="#" class="btn btn-success"><%=e.button %></a>
+          </div>
+        </div>
+        </div>
+      
+        <% } )%>
+      </div> 
+
+      
+
+    </div>
+
+</div>
+
+
+
+<%-include('footer')-%>

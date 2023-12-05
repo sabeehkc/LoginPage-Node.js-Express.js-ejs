@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('/assets/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(220,154,154,1) 0%, rgba(212,156,158,1) 0%, rgba(111,183,204,1) 50%, rgba(191,162,167,1) 83%, rgba(0,212,255,1) 95%);
+}
+
+.center-div{
+    padding-top: 2%;
+    
+}
+
+.btn.btn-success{
+    padding: 0.5em 1em;
+}
+form{
+    padding: 0 1em;
+}
+
+#login .title>span{
+    font-size: .8em;
+}
+a{
+    text-decoration: none;
+}
+.mycardbox{
+    justify-content: space-evenly;
+}
+.card{
+    transition: transform .2s;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.head-title{
+    font-family: 'Playfair Display', serif;
+
+}
